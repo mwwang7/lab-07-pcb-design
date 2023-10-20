@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # Print raw values of light sensor with text "bright" or "dark"
     for i in range(50):
       light_sensor = mcp.read_adc(sound_sensor_pin)
-      print(light_sensor, end=" ")
+      print(light_sensor)
       if light_sensor > 100:
         print("bright")
       else:
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     for i in range(50):
       GPIO.output(led_pin, GPIO.LOW)
       sound_sensor = mcp.read_adc(sound_sensor_pin)
-      print(sound_sensor, end=" ")
+      print(sound_sensor)
       if sound_sensor > 500:
         GPIO.output(led_pin, GPIO.HIGH)
       time.sleep(0.1)
