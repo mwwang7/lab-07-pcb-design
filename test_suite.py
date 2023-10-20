@@ -10,6 +10,7 @@ import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
 import RPi.GPIO as GPIO
 
+# Blink LED on pin for given number of times for given interval duration
 def led_blink(times, interval, pin):
   for i in range(times):
     GPIO.output(pin, GPIO.HIGH)
@@ -22,8 +23,8 @@ sound_sensor_pin = 0
 light_sensor_pin = 1
 # Set pin numbering system to BOARD numbering
 GPIO.setmode(GPIO.BOARD)
-# Set pin 11 which is connected to LED to be an output pin
-GPIO.setup(11, GPIO.OUT)
+# Set led_pin to be an output pin
+GPIO.setup(led_pin, GPIO.OUT)
 # Software SPI configuration:
 SCLK = 23
 MISO = 21
