@@ -19,8 +19,8 @@ def led_blink(times, interval, pin):
     time.sleep(interval)
 
 led_pin = 11
-sound_sensor_pin = 0
-light_sensor_pin = 1
+light_sensor_pin = 0
+sound_sensor_pin = 1
 # Set pin numbering system to BOARD numbering
 GPIO.setmode(GPIO.BOARD)
 # Set led_pin to be an output pin
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     # Read output of Grove light sensor for 5s with intervals of 100ms
     # Print raw values of light sensor with text "bright" or "dark"
     for i in range(50):
-      light_sensor = mcp.read_adc(sound_sensor_pin)
+      light_sensor = mcp.read_adc(light_sensor_pin)
       print(light_sensor)
       if light_sensor > 100:
         print("bright")
