@@ -1,1 +1,1 @@
-# lba-07-pcb-design
+# lab-07-pcb-design
