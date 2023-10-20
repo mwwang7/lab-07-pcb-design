@@ -1,5 +1,5 @@
 # Team Members: Michael Wang
-# Github Repo Link: 
+# Github Repo Link: https://github.com/mwwang7/lab-07-pcb-design/tree/lab07
 """EE 250L Lab 07
 
 Run test_suite.py on Raspberry Pi."""
